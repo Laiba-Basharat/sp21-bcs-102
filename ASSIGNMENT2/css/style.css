@@ -1,1 +1,228 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Naviagation menu */
 
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: absolute;
+    top: 0px; */
+}
+
+#logo{
+    
+    margin: 4px 15px;
+
+}
+#logo img{
+    height: 56px;
+    margin: 4px 10px;
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar::before{
+    content: "";
+    height: 12%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+  left: 0%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{ 
+  margin: 20px 10px;  
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-family: 'Bree Serif', serif;
+}
+#navbar ul li a:hover{ 
+    color: black;
+    background-color: white;
+  }
+
+  /* Home Section */
+    
+  #home::before{
+    content: "";
+    height: 663px;
+    width: 100%;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.89;
+
+  }
+
+  #home{
+    height: 582px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* utility classes */
+  #home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+
+
+  }
+
+  #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Acme', sans-serif;
+
+
+
+  }
+  /* services section */
+
+  .h-primary{
+    font-size: 2.8rem;
+    /* padding: 12px; */
+    font-family: 'Acme', sans-serif;
+    margin: 12px;
+
+  }
+
+  .btn{
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    margin: 6px 20px;
+    background-color: brown;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-family: 'Acme', sans-serif;
+    cursor: pointer;
+    
+  }
+  .center{
+    text-align: center;
+  }
+
+ 
+  .h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Acme', sans-serif;
+
+   
+  }
+
+  #services{
+    margin: 20px 40px;
+    display: flex;
+  
+  }
+
+  #services .box{
+    border: 2px solid brown;
+    margin: 2px 20px;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: rgb(235, 223, 223);
+
+  }
+  #services .box img{
+   height: 100px;
+   display: block;
+   margin: auto;
+  }
+
+  #services .box p{
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+   }
+
+   #clientsection{
+    /* height: 444px; */
+    position: relative;
+   }
+
+   #clientsection::before{
+    content: "";
+    background: url('../5.jpg')no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 105%; 
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+   #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #clients img{
+    height: 90px;
+   }
+   .client-items{
+    padding: 34px;
+   }
+  /* Conatct section */
+  #contact{
+    position: relative;
+  }
+  #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+  #contact-box form{
+    width: 35%;
+  }
+  #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+  }
+
+  #contact-box textarea,
+  #contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.0rem;
+    border-radius: 9px;
+
+  }
+
+  #contact::before{
+    content: "";
+    position: absolute ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6s;
+    background: url('../contact.jpg') no-repeat center center/cover;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+  }
+  
